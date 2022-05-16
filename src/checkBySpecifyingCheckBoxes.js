@@ -1,6 +1,6 @@
-//テーブルのヘッダー名
+//テーブルの列見出し
 let lineName = ['参照のみ'];
-//テーブルの行名　※空の場合全指定
+//テーブルの行見出し　※空の場合全指定
 let columnName = [];
 //チェックボックスのTrue/False設定
 let checkboxStatus = true;
@@ -11,9 +11,9 @@ cellsTable.forEach(function(cTlltable){
 	cellsTr.forEach(function(cellTr){
 		if(columnName.length != 0){
 			columnName.forEach(function(colu){
-				console.log(cellTr.firstElementChild);
 				if(cellTr.firstElementChild.innerText == colu){
 					console.log('部分チェック');
+					console.log('★行見出し：'+cellTr.firstElementChild.innerText);
 					checkLogic(cellTr);
 				}
 			});
