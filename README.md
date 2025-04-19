@@ -1,5 +1,6 @@
-# 「拡張機能はNG」な時に！Salesforceの項目セキュリティ設定を一括操作するスクリプト
+# 「拡張機能はNG」な時にSalesforceの項目セキュリティ設定を一括操作するスクリプト
 
+## はじめに
 **テーブル内のチェックボックスを指定してチェックのつけ外しを行うスクリプト**  
 Salesforceの項目レベルセキュリティのチェックのつけ外しが面倒な上、間違えられないので、このスクリプトを作成しました💁‍♂️  
 
@@ -7,17 +8,17 @@ Salesforceの項目レベルセキュリティのチェックのつけ外しが�
 　・各項目の項目レベルセキュリティ設定画面  
 　・各プロファイルの項目レベルセキュリティ設定画面  
 ※項目レベルセキュリティ設定画面以外でも、テーブルかつ列見出し・行見出しがある箇所であればチェックのつけ外しできます。
-***
+
 ## 【使い方】  
 
-## ➀ テーブル内で右クリックしメニュー画面から「検証」を選択してください。
+### ➀ テーブル内で右クリックしメニュー画面から「検証」を選択してください。
 ![項目レベルセキュリティ](/READMEimages/contact_Field-LevelSecurity00.png)
 ![項目レベルセキュリティ](/READMEimages/contact_Field-LevelSecurity01.png)
 
-## ➁ 検証(Developer Tools)を表示させ「Console」パネルを選択してくさい。
+### ➁ 検証(Developer Tools)を表示させ「Console」パネルを選択してくさい。
 ![項目レベルセキュリティ](/READMEimages/contact_Field-LevelSecurity02.png)
 
-## ➂ 値の変更を行ってください。
+### ➂ 値の変更を行ってください。
 ![項目レベルセキュリティ](/READMEimages/contact_Field-LevelSecurity03.png)
 1. 変数名：lineName
     1. チェックのつけ外しを行いたい**列見出し**を記載してください。
@@ -56,5 +57,5 @@ Salesforceの項目レベルセキュリティのチェックのつけ外しが�
 			```
 			let checkboxStatus = false;
 			```
-## ➃スクリプトの編集ができたらConsoleにスクリプトを貼り付けてEnterを押してください。
+### ➃スクリプトの編集ができたらConsoleにスクリプトを貼り付けてEnterを押してください。
 ![項目レベルセキュリティ](/READMEimages/contact_Field-LevelSecurity05.png)
